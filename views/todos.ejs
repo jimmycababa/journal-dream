@@ -9,21 +9,22 @@
 </head>
 <body>
     <div class="row">
-        <div class="column"></div>
-        <div class="column"></div>
+        <div class="column1" <h1>personal journal</h1></div>
+        <div class="column2" <h1>memory feed</h1></div>
       </div>
-    <h1>personal journal</h1>
+    
     <ul>
     <% todos.forEach( el => { %>
             <li class='todoItem' data-id='<%=el._id%>'>
                 <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
+                <span class='<%= el.moveCompleted === true ? 'moveCompleted' : 'not'%>'><%= el.todo %></span>
                 <button <span class='del'> delete </span></button>
                 <button <span class="feed"> add to feed </button>
             </li>
     <% }) %>    
     </ul>
 
-    <h2><%= user.userName %> has <%= left %> things left to do.</h2>
+    
 
     <form action="/todos/createTodo" method='POST'>
         <input type="text" placeholder="enter memory" name='todoItem'>

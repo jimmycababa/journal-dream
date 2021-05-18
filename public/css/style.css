@@ -1,18 +1,20 @@
-h1{
+.column1, .column2{
     color: red;
+    font-size: xx-large;
+    text-align: center;
+    text-decoration: underline;
 }
 .completed{
-    text-decoration: line-through;
-    color: gray;
+    display: none;
 }
 .not{
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 .row {
     display: flex;
   }
   
-  .column {
+  .column1, .column2 {
     flex: 50%;
   }
