@@ -9,6 +9,10 @@ h1{
     text-decoration: underline;
 }
 
-body{
-    text-align: center;
-}
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+  }
