@@ -1,8 +1,8 @@
-.column1, .column2{
-    color: red;
-    font-size: xx-large;
-    text-align: center;
-    text-decoration: underline;
+.column{
+    
+    flex: 50%;
+    overflow:hidden;
+    
 }
 .completed{
     display: none;
@@ -11,10 +11,14 @@
     font-weight: bold;
 }
 
-.row {
+#row {
     display: flex;
+    
   }
   
-  .column1, .column2 {
-    flex: 50%;
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
   }

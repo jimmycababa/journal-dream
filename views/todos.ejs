@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="row">
-        <div class="column1" <h1>personal journal</h1></div>
-        <div class="column2" <h1>memory feed</h1></div>
+    <div id="row">
+        <div class="column" <h1 class="col1">personal journal</h1></div>
+        <div class="column" <h1 class="col2">memory feed</h1></div>
       </div>
     
     <ul>
     <% todos.forEach( el => { %>
             <li class='todoItem' data-id='<%=el._id%>'>
                 <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
-                <span class='<%= el.moveCompleted === true ? 'moveCompleted' : 'not'%>'><%= el.todo %></span>
+            
                 <button <span class='del'> delete </span></button>
                 <button <span class="feed"> add to feed </button>
             </li>
@@ -30,7 +30,7 @@
         <input type="text" placeholder="enter memory" name='todoItem'>
         <input type="submit">
     </form>
-
+        <br></body><br>
     <button <a href="/logout">Logout</a></button>
 
     <script src="js/main.js"></script>
