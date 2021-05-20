@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="row">
-        <div class="column" <h1 class="col1">personal journal</h1></div>
-        <div class="column" <h1 class="col2">memory feed</h1></div>
-      </div>
+    <div class="row" style="display: flex;">
+        <div class="col-md-6">
+            personal journal
+        </div>
+        <div class="col-md-6">
+            feed
+        </div>
+    </div>
     
     <ul>
     <% todos.forEach( el => { %>
