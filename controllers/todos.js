@@ -32,17 +32,17 @@ module.exports = {
         }
     },
 
-    addToFeed: async (req, res)=>{
-        try{
-            await Todo.findOneAndUpdate({_id:req.body.todoIdFromJSFile},{
-                completed: true
-            })
-            console.log('Marked Feed')
-            res.json('Marked Feed')
-        }catch(err){
-            console.log(err)
-        }
-    },
+    // addToFeed: async (req, res)=>{
+    //     try{
+    //         await Todo.findOneAndUpdate({_id:req.body.todoIdFromJSFile},{
+    //             completed: true
+    //         })
+    //         console.log('Marked Feed')
+    //         res.json('Marked Feed')
+    //     }catch(err){
+    //         console.log(err)
+    //     }
+    // },
     markIncomplete: async (req, res)=>{
         try{
             await Todo.findOneAndUpdate({_id:req.body.todoIdFromJSFile},{
